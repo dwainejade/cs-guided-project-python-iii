@@ -11,4 +11,7 @@ Examples:
 """
 def single_number(nums):
     # Your code here
-
+    for num in nums:
+        if nums.count(num) == 1:
+            return num
+print(single_number([5,2,3,2,3]))

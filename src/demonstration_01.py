@@ -15,4 +15,15 @@ Notes:
 """
 def two_sum(nums, target):
     # Your code here
+    # compare idx + (idx + 1) to target
+    # if not equal, idx + 2
+    idx = 1
+    for num in nums:
+        for num in nums:
+            print (num,nums[idx])
+            if num + nums[idx] == target:
+                return('found:', nums.index(num), nums.index(nums[idx]))
+        if idx < len(nums)-2:
+            idx +=1
 
+two_sum([4,3,5], 8)
